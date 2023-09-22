@@ -1,0 +1,19 @@
+{
+  "portal": [
+    {
+      "email": "klesio.dev@gmail.com",
+      "properties": {
+        "fullname": "test-cgd",
+        "location": "World"
+      },
+      "groups": [
+      ],
+      "roles": [
+        "Member"
+      ],
+      "username": "test-cgd"
+    }
+  ],
+    "team": [
+  ]
+}
