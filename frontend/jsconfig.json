@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
         "paths": {
+            "volto-test-cgd": [
+                "addons/volto-test-cgd/src"
+            ]
         },
         "baseUrl": "src"
     }
