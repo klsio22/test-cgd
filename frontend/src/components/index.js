@@ -8,3 +8,7 @@
  *   Footer,
  * };
  */
+
+import NumbersEdit from './Blocks/Numbers/NumbersEdit';
+import NumbersView from './Blocks/Numbers/NumbersView';
+export { NumbersEdit, NumbersView };
