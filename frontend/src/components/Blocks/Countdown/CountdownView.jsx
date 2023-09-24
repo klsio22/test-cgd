@@ -9,8 +9,8 @@ const CountdownView = (props) => {
 
   /*
   faz a soma total de segundos para armazenar valores que precisam persistir
-  entre as renderizações do componente, garantido que o valor preservado
-  corretamente e não seja reinicializado a cada renderização
+  entre as renderizações do componente, garantido que o valor seja preservado
+  corretamente entre as renderizações
   */
 
   const totalSecondsRef = useRef(hours * 3600 + minutes * 60 + seconds);
@@ -90,7 +90,7 @@ const CountdownView = (props) => {
           <button
             onClick={() => setIsRunning(false)}
             disabled={!isRunning}
-            className="buttonStart top bg-red-400 cursor-pointer px-8 py-3 text-xl font-medium text-white hover:bg-red-600 rounded-md"
+            className="buttonStart bg-red-400 cursor-pointer px-8 py-3 text-xl font-medium text-white hover:bg-red-600 rounded-md"
           >
             {data.buttonStop === undefined ? 'stop' : data.buttonStop}
           </button>

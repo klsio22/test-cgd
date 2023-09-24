@@ -115,7 +115,7 @@ const CountdownEdit = (props) => {
           </li>
         </ul>
         <div className="flex justify-center gap-4">
-          <span className=" bg-green-400 cursor-pointer px-8 py-3 text-xl font-medium text-white hover:bg-green-600 rounded-md">
+          <span className=" bg-green-400 px-8 py-3 text-xl font-medium text-white hover:bg-green-600 rounded-md">
             <TextLineEdit
               {...props}
               renderTag="span"
@@ -127,7 +127,7 @@ const CountdownEdit = (props) => {
               onChangeBlock={onChangeBlock}
             />
           </span>
-          <span className=" bg-green-400 cursor-pointer px-8 py-3 text-xl font-medium text-white hover:bg-green-600 rounded-md">
+          <span className="bg-red-400 px-8 py-3 text-xl font-medium text-white hover:bg-red-600 rounded-md">
             <TextLineEdit
               {...props}
               renderTag="span"

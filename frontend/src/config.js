@@ -15,7 +15,6 @@
 
 // All your imports required for the config here BEFORE this line
 import { CountdownView, CountdownEdit } from './components/index';
-
 import heroSVG from '@plone/volto/icons/hero.svg';
 
 export default function applyConfig(config) {
@@ -25,9 +24,9 @@ export default function applyConfig(config) {
     supportedLanguages: ['pt-br'],
     defaultLanguage: 'pt-br',
   };
-  config.blocks.blocksConfig.numbers = {
-    id: 'numbers',
-    title: 'Numbers',
+  config.blocks.blocksConfig.countdown = {
+    id: 'countdown',
+    title: 'Countdown',
     icon: heroSVG,
     group: 'common',
     view: CountdownView,
