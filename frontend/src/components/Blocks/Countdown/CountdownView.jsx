@@ -37,12 +37,12 @@ const CountdownView = (props) => {
 
   return (
     <div className="flex flex-col justify-center items-center my-20">
-      <div className="title text-4xl font-bold uppercase p-4">
+      <div className="title text-4xl font-bold uppercase p-4 max-[1024px]:text-2xl">
         {data.title === undefined ? 'Countdown Time' : data.title}
       </div>
       <div>
-        <ul className="flex gap-4">
-          <li className="flex flex-col gap-4 text-3xl p-4 uppercase font-semibold items-center">
+        <ul className="flex gap-4 max-[1024px]:gap-0">
+          <li className="flex flex-col gap-4 text-3xl p-4 uppercase font-semibold items-center max-[1024px]:text-xl">
             <span
               onChange={(e) => setHours(e.target.value)}
               disabled={isRunning}
@@ -54,7 +54,7 @@ const CountdownView = (props) => {
               {data.hours === undefined ? 'hours' : data.hours}
             </span>
           </li>
-          <li className="flex flex-col gap-4 text-3xl p-4 uppercase font-semibold items-center">
+          <li className="flex flex-col gap-4 text-3xl p-4 uppercase font-semibold items-center max-[1024px]:text-xl">
             <span
               onChange={(e) => setMinutes(e.target.value)}
               disabled={isRunning}
@@ -66,7 +66,7 @@ const CountdownView = (props) => {
               {data.minutes === undefined ? 'minutes' : data.minutes}
             </span>
           </li>
-          <li className="flex flex-col gap-4 text-3xl p-4 uppercase font-semibold items-center">
+          <li className="flex flex-col gap-4 text-3xl p-4 uppercase font-semibold items-center max-[1024px]:text-xl">
             <span
               onChange={(e) => setSeconds(e.target.value)}
               disabled={isRunning}

@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <div className="flex flex-col w-full">
       <div className="">
-        <div className="bg-yellow-200 flex w-full p-8">
-          <div className="flex mx-auto items-start justify-between w-[1024px]">
+        <div className="bg-yellow-200 flex w-full p-6">
+          <div className="flex mx-auto items-start justify-between gap-4 w-[1024px] max-[1024px]:flex-col">
             <div>
               <h3>Acesso Rápido</h3>
               <ul>
@@ -128,7 +128,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-8 w-[1024px] mx-auto">
+        <div className="py-8 w-[1024px] mx-auto max-[1024px]:px-6">
           <div id="wrapper-footer-brasil" className="flex items-center">
             <a href="http://www.acessoainformacao.gov.br/">
               <LogoInformation />
@@ -143,7 +143,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="py-8 w-[1024px] mx-auto">
+        <div className="py-8 w-[1024px] mx-auto max-[1024px]:px-6">
           <span>
             Desenvolvido com o CMS de código aberto{' '}
             <a href="https://plone.org/" alt="Link plone">
