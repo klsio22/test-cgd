@@ -14,7 +14,7 @@
  */
 
 // All your imports required for the config here BEFORE this line
-import { NumbersView, NumbersEdit } from './components/index';
+import { CountdownView, CountdownEdit } from './components/index';
 
 import heroSVG from '@plone/volto/icons/hero.svg';
 
@@ -30,8 +30,8 @@ export default function applyConfig(config) {
     title: 'Numbers',
     icon: heroSVG,
     group: 'common',
-    view: NumbersView,
-    edit: NumbersEdit,
+    view: CountdownView,
+    edit: CountdownEdit,
     restricted: false,
     mostUsed: false,
     sidebarTab: false,

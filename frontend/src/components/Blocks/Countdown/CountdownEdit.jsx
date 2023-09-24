@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import TextLineEdit from '../../../../omelette/src/components/manage/TextLineEdit/TextLineEdit';
 
-const NumbersEdit = (props) => {
+const CountdownEdit = (props) => {
   const { block, onChangeBlock, isEditMode, data } = props;
 
   // Verifica os se os valores são undefined e atribui valores padrão
@@ -23,7 +23,7 @@ const NumbersEdit = (props) => {
       hours: 'Hours',
       minutes: 'Minutes',
       seconds: 'Seconds',
-      hoursTime: '00',
+      hoursTime: '0',
       minutesTime: '0',
       secondsTime: '0',
       buttonStart: 'Start',
@@ -115,7 +115,7 @@ const NumbersEdit = (props) => {
           </li>
         </ul>
         <div className="flex justify-center gap-4">
-          <span className="start bg-green-400 px-6 py-4 text-xl font-medium text-white">
+          <span className=" bg-green-400 cursor-pointer px-8 py-3 text-xl font-medium text-white hover:bg-green-600 rounded-md">
             <TextLineEdit
               {...props}
               renderTag="span"
@@ -127,7 +127,7 @@ const NumbersEdit = (props) => {
               onChangeBlock={onChangeBlock}
             />
           </span>
-          <span className="stop bg-red-400 px-6 py-4 text-xl font-medium text-white">
+          <span className=" bg-green-400 cursor-pointer px-8 py-3 text-xl font-medium text-white hover:bg-green-600 rounded-md">
             <TextLineEdit
               {...props}
               renderTag="span"
@@ -145,4 +145,4 @@ const NumbersEdit = (props) => {
   );
 };
 
-export default NumbersEdit;
+export default CountdownEdit;

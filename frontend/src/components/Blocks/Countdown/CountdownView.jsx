@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const NumbersView = (props) => {
+const CountdownView = (props) => {
   const { data } = props;
   const [hours, setHours] = useState(Number(data.hoursTime) || 0);
   const [minutes, setMinutes] = useState(Number(data.minutesTime) || 0);
@@ -35,18 +35,10 @@ const NumbersView = (props) => {
     return () => clearInterval(timer);
   }, [isRunning]);
 
-  const handleStart = () => {
-    setIsRunning(true);
-  };
-
-  const handleStop = () => {
-    setIsRunning(false);
-  };
-
   return (
     <div className="flex flex-col justify-center items-center my-20">
       <div className="title text-4xl font-bold uppercase p-4">
-        {data.title === undefined ? 'Countdown Timer' : data.title}
+        {data.title === undefined ? 'Countdown Time' : data.title}
       </div>
       <div>
         <ul className="flex gap-4">
@@ -87,18 +79,18 @@ const NumbersView = (props) => {
             </span>
           </li>
         </ul>
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 my-8">
           <button
-            onClick={handleStart}
+            onClick={() => setIsRunning(true)}
             disabled={isRunning}
-            className="buttonStart start bg-green-400 cursor-pointer px-6 py-4 text-xl font-medium text-white"
+            className="buttonStart bg-green-400 cursor-pointer px-8 py-3 text-xl font-medium text-white hover:bg-green-600 rounded-md"
           >
             {data.buttonStart === undefined ? 'start' : data.buttonStart}
           </button>
           <button
-            onClick={handleStop}
+            onClick={() => setIsRunning(false)}
             disabled={!isRunning}
-            className="buttonStart stop bg-red-400 cursor-pointer px-6 py-4 text-xl font-medium text-white"
+            className="buttonStart top bg-red-400 cursor-pointer px-8 py-3 text-xl font-medium text-white hover:bg-red-600 rounded-md"
           >
             {data.buttonStop === undefined ? 'stop' : data.buttonStop}
           </button>
@@ -108,4 +100,4 @@ const NumbersView = (props) => {
   );
 };
 
-export default NumbersView;
+export default CountdownView;

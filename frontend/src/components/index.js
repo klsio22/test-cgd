@@ -9,6 +9,6 @@
  * };
  */
 
-import NumbersEdit from './Blocks/Numbers/NumbersEdit';
-import NumbersView from './Blocks/Numbers/NumbersView';
-export { NumbersEdit, NumbersView };
+import CountdownEdit from './Blocks/Countdown/CountdownEdit';
+import CountdownView from './Blocks/Countdown/CountdownView';
+export { CountdownEdit, CountdownView };
